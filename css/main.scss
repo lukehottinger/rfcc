@@ -1,14 +1,22 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Declarations of site fonts and variables
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700');
+
+// Font variables
+$main-font-family: 'Lato', sans-serif;
+$main-font-size:   16px;
+$main-line-height: 1.5;
+
+$heading-font-family: 'Open Sans', sans-serif;
+$heading-line-height: 1.5;
+
+
+// Other variables
 
 $spacing-unit:     30px;
 
@@ -26,6 +34,63 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+
+// Main style constants
+
+html, span, p, li, a {
+  font-family: $main-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+  font-size: 1.17em;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 1.17em;
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 1.17em;
+  font-weight: normal;
+}
+
+a {
+  &:active {
+    color: black;
+  }
+
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    color: black;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Spacing
 
 // Use media queries like this:
 // @include media-query($on-palm) {
