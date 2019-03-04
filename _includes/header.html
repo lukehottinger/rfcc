@@ -1,6 +1,6 @@
 <header>
   <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-  <nav>
+  <nav class="static-pages">
     {% for my_page in site.pages %}
       {% if my_page.title %}
         <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>

@@ -37,6 +37,10 @@ $on-laptop:        800px;
 
 // Main style constants
 
+body {
+  margin: auto;
+}
+
 html, span, p, li, a {
   font-family: $main-font-family;
 }

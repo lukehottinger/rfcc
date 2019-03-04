@@ -4,3 +4,20 @@
   margin: 0 auto;
   max-width: $content-width;
 }
+
+header {
+  height: 70px;
+
+  nav {
+    height: inherit;
+
+    &.static-pages {
+      float: right;
+
+      a {
+        margin: 5px 5px 5px 5px;
+        display: inline-block;
+      }
+    }
+  }
+}
