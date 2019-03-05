@@ -3,4 +3,4 @@ layout: page
 title: Join
 ---
 
-Join the club!
+# Join the Club

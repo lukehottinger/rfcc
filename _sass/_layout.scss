@@ -8,6 +8,10 @@
 header {
   height: 70px;
 
+  a {
+    line-height: 70px;
+  }
+
   nav {
     height: inherit;
 
@@ -15,8 +19,30 @@ header {
       float: right;
 
       a {
-        margin: 5px 5px 5px 5px;
         display: inline-block;
+        margin: 0 5px;
+      }
+
+      .nav-dropdown {
+        display: inline-block;
+
+        .nav-dropdown-content {
+          display: none;
+          position: absolute;
+          z-index: 1;
+          background-color: #666;
+
+          a {
+            display: block;
+            line-height: normal;
+          }
+        }
+
+        &:hover {
+          .nav-dropdown-content {
+            display: block;
+          }
+        }
       }
     }
   }

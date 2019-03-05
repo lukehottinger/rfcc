@@ -1,0 +1,115 @@
+---
+# Declarations of site fonts and variables
+---
+@charset "utf-8";
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700');
+
+// Font variables
+$main-font-family: 'Lato', sans-serif;
+$main-font-size:   16px;
+$main-line-height: 1.5;
+
+$heading-font-family: 'Open Sans', sans-serif;
+$heading-line-height: 1.5;
+
+
+// Other variables
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+// Main style constants
+
+body {
+  margin: auto;
+}
+
+html, span, p, li, a {
+  font-family: $main-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+  font-size: 1.17em;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 1.17em;
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 1.17em;
+  font-weight: normal;
+}
+
+a {
+  &:active {
+    color: black;
+  }
+
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    color: black;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Spacing
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "layout"
+;

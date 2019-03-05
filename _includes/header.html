@@ -1,10 +1,17 @@
 <header>
   <a href="{{ site.baseurl }}/">{{ site.title }}</a>
   <nav class="static-pages">
-    {% for my_page in site.pages %}
-      {% if my_page.title %}
-        <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-      {% endif %}
-    {% endfor %}
+    <div class="nav-dropdown">
+      <a class="nav-dropdown-button">The Club</a>
+      <div class="nav-dropdown-content">
+        <a href="/about">About</a>
+        <a href="/membership">Membership</a>
+        <a href="/newresidents">New Residents</a>
+        <a href="/donate">Donate</a>
+        <a href="/join">Join</a>
+      </div>
+    </div>
+    <a href="/borough">Borough Information</a>
+    <a href="/community">Community Facilities</a>
   </nav>
 </header>
