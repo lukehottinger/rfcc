@@ -8,6 +8,7 @@ body {
   margin: 25px auto;
   max-width: $content-width;
   min-height: calc(100vh - 270px);
+  display: grid;
 
   img {
     pointer-events: none;
@@ -90,7 +91,7 @@ footer {
   display: block;
   font-size: 20px;
   margin: 10px 0 25px 0;
-  line-height: 3;
+  padding: 10px 0;
   transition: box-shadow .25s ease-in-out;
   -moz-transition: box-shadow .25s ease-in-out;
   -webkit-transition: box-shadow .25s ease-in-out;
@@ -102,6 +103,7 @@ footer {
 
 .center {
   text-align: center;
+  margin: auto;
 }
 
 
@@ -117,6 +119,13 @@ footer {
     font-size: 14px;
   }
 
+  footer {
+    .container {
+      .copyright {
+        font-size: 10px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
