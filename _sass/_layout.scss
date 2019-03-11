@@ -1,12 +1,33 @@
 // Main layout styles
 
+body {
+  background-color: #fefefe;
+}
+
 .content {
-  margin: 0 auto;
+  margin: 25px auto;
   max-width: $content-width;
+  min-height: calc(100vh - 270px);
+
+  img {
+    pointer-events: none;
+    opacity: 0.9;
+  }
 }
 
 header {
   height: 70px;
+  background-color: #222;
+
+  .logo {
+    margin-left: 15px;
+    a {
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      font-size: 40px;
+      text-decoration: none;
+      color: #fefefe;
+    }
+  }
 
   a {
     line-height: 70px;
@@ -46,4 +67,62 @@ header {
       }
     }
   }
+}
+
+footer {
+  background-color: #222;
+  color: #fefefe;
+
+  .container {
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .copyright {
+      font-size: 14px;
+    }
+  }
+}
+
+.announcement {
+  display: block;
+  font-size: 20px;
+  margin: 10px 0 25px 0;
+  line-height: 3;
+  transition: box-shadow .25s ease-in-out;
+  -moz-transition: box-shadow .25s ease-in-out;
+  -webkit-transition: box-shadow .25s ease-in-out;
+
+  &:hover {
+    box-shadow: #666 4px 4px 10px;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 39.9375em) {
+
+  .content {
+    img {
+      margin: auto 10px;
+    }
+  }
+
+  .announcement {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+}
+
+@media screen and (min-width: 64em) {
+
 }
