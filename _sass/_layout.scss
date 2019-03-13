@@ -22,6 +22,8 @@ header {
 
   .logo {
     margin-left: 15px;
+    display: inline-block;
+
     a {
       font-family: 'Yanone Kaffeesatz', sans-serif;
       font-size: 40px;
@@ -39,10 +41,15 @@ header {
 
     &.static-pages {
       float: right;
+      margin: 0 10px 0 0;
 
       a {
         display: inline-block;
         margin: 0 5px;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fefefe;
       }
 
       .nav-dropdown {
@@ -52,7 +59,9 @@ header {
           display: none;
           position: absolute;
           z-index: 1;
-          background-color: #666;
+          background-color: #222;
+          border-radius: 0 0 5px 5px;
+          padding: 0 10px 10px 10px;
 
           a {
             display: block;

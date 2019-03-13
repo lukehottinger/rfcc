@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<div class="grid-x">
+<!-- <div class="grid-x">
   <div class="cell center">
     <span class="announcement">A new and improved website is coming soon - stay tuned.</span>
     <img src="/assets/img/hero.svg" />
   </div>
-</div>
+</div> -->
 
-<!-- # Welcome to Rosslyn Farms
+# Welcome to Rosslyn Farms
 Founded in 1902 by the Chartiers Land Company, the Borough of Rosslyn Farms was developed by William Hayes Parrish, whose descendants still live here.  Rosslyn Farms is a small suburban borough conveniently located 5 miles west of Pittsburgh and 10 miles east of the Pittsburgh International Airport. It is a small community (0.6 square miles) consisting of 194 homes. At the heart of the Borough is the Rosslyn Farms Community Center, which provides meeting and recreational facilities for numerous civic events and youth activities.
 
 <div class="grid-x">
@@ -56,4 +56,4 @@ Founded in 1902 by the Chartiers Land Company, the Borough of Rosslyn Farms was 
       </div>
     </div>
   </div>
-</div> -->
+</div>
