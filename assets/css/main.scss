@@ -12,7 +12,7 @@ $main-font-family: 'Lato', sans-serif;
 $main-font-size:   16px;
 $main-line-height: 1.5;
 
-$heading-font-family: 'Open Sans', sans-serif;
+$heading-font-family: 'Yanone Kaffeesatz', sans-serif;
 $heading-line-height: 1.5;
 
 
@@ -77,20 +77,38 @@ h6 {
 }
 
 a {
+  color: #7C0A02;
+
   &:active {
     color: black;
+
+    span {
+      color: black
+    }
   }
 
   &:visited {
     color: black;
+
+    span {
+      color: black
+    }
   }
 
   &:hover {
     color: black;
+
+    span {
+      color: black
+    }
   }
 
   &:focus {
     outline: none;
+
+    span {
+      color: black
+    }
   }
 }
 

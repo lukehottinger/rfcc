@@ -1,0 +1,7 @@
+---
+layout: lastword
+title:  "Last Word &#124; December 2016"
+date:   2016-12-01 00:00:00 -0500
+pdf: "lw-2016-12.pdf"
+thumb: "lw-2016-12.png"
+---
