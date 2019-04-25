@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Membership
+hero: membership-hero.jpg
+hero-credits: Brad Knabel
 ---
 
 # Membership

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: About
+hero: about-hero.jpg
+hero-credits: Brad Knabel
 ---
 
 # About
@@ -12,6 +14,8 @@ Originally known as “Uncertainty,” the tract of land that is now Rosslyn Far
 
 ## 2018- 2019 Community Club Executive Board
 
-* President: Erin O'Toole
-* Vice President: Isabel Ford
-* Treasurer: Chrissy Green
+* **President**: Erin O'Toole
+* **Vice President**: Isabel Ford
+* **Treasurer**: Chrissy Green
+* **Recording Secretary**: Marty O'Toole
+* **Correspondence Secretary**: Paula Duncan

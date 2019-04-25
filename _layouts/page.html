@@ -2,4 +2,10 @@
 layout: default
 ---
 
-{{ content }}
+<div class="hero-container">
+  <img src="/assets/img/heros/{{ page.hero }}" />
+  <span class="photo-credits">&copy; {{ page.hero-credits }}</span>
+</div>
+<div class="content">
+  {{ content }}
+</div>

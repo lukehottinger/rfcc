@@ -4,6 +4,38 @@ body {
   background-color: #fefefe;
 }
 
+.hero-container {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .photo-credits {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fefefe;
+    font-size: 12px;
+    padding: 5px 10px;
+    opacity: 0;
+
+    transition: opacity .25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    -moz-transition: opacity .25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    -webkit-transition: opacity .25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+
+  &:hover {
+    .photo-credits {
+      opacity: 0.85;
+    }
+  }
+}
+
 .content {
   margin: 25px auto;
   max-width: $content-width;
@@ -13,6 +45,44 @@ body {
   img {
     pointer-events: none;
     opacity: 0.9;
+  }
+
+  .card {
+    position: relative;
+    height: 250px;
+    border: #222 solid 1px;
+    margin: 10px;
+
+    img {
+      filter: grayscale(50%);
+      object-fit: cover;
+      object-position: 0 0;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+
+      transition: filter .25s ease-in-out;
+      -moz-transition: filter .25s ease-in-out;
+      -webkit-transition: filter .25s ease-in-out;
+    }
+
+    .title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 30px;
+      width: 90%;
+      background-color: #fefefe;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    &:hover {
+      img {
+        filter: grayscale(0%);
+      }
+    }
   }
 }
 
@@ -79,6 +149,14 @@ header {
   }
 }
 
+.footer-buffer {
+  background-color: #DDD;
+
+  .feature-image {
+    padding: 20px;
+  }
+}
+
 footer {
   background-color: #222;
   color: #fefefe;
@@ -119,6 +197,8 @@ footer {
 @media screen and (max-width: 39.9375em) {
 
   .content {
+    margin: 25px 15px;
+
     img {
       margin: auto 10px;
     }
