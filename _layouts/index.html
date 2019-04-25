@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% if page.hero %}
+  <div class="hero-container">
+    <img src="/assets/img/heros/{{ page.hero }}" />
+    <span class="photo-credits">&copy; {{ page.hero-credits }}</span>
+  </div>
+{% endif %}
+{% if page.announcement %}
+  <div class="announcement">
+    <span>{{ page.announcement }}</span>
+  </div>
+{% endif %}
+<div class="content">
+  {{ content }}
+</div>
