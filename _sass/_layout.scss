@@ -139,7 +139,7 @@ header {
           }
         }
 
-        &:hover {
+        &:hover, &:focus, &:active {
           .nav-dropdown-content {
             display: block;
           }
