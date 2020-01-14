@@ -1,6 +1,6 @@
 ---
 layout: index
-announcement: Welcome to the new RFCC website!  Here's a list of new features that will be added soon&#58; <b>an event calendar</b>, <b>an archive of Last Word editions</b>, and <b>more information on The Club</b>.  Stay tuned!
+announcement: Sign Up For Your 2020 RFCC Membership <strong><a href="/membership">Here</a></strong> Today!
 hero: index-hero.jpg
 hero-credits: WikiMedia Commons
 ---
